@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Gurleen Wadhwa
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Gurleen Wadhwa} \\ \vspace{1pt}
+    \small (902)-412-5241 $|$ \href{mailto:gurleen.wadhwa@dal.ca}{\underline{gurleen.wadhwa@dal.ca}} $|$ 
+    \href{https://www.linkedin.com/in/gurleen-wadhwa-56829a1a0/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/gurleenwadhwa-13}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dalhousie University}{Jan 2020 -- April 2024} 
+      {Bachelor of Computer Science}{Halifax, NS}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+% -----------Multiple Positions Heading Structure-----------
+%    \resumeSubSubheading
+%     {Software Engineer }{DATES COME HERE}
+%     \resumeItemListStart
+%        \resumeItem{BULLET POINTS FOR EXPERIENCES}
+%          {EXAMPLE:Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Student Navigator (IT Help Desk)}{Jan 2023 -- Present}
+      {Dalhousie University}{Halifax, NS}
+      \resumeItemListStart
+        \resumeItem{Providing technical assistance to faculty, staff, students, and alumni.}
+        \resumeItem{Assisted Faculty, Students, and Alumni with downloading open-source software and getting licenses, setting up Virtual Private Networks(VPN), as well as troubleshooting any related issues.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Quality Engineer Intern}{Jan 2022 -- May 2022}
+      {Introhive}{Remote(Canada)}
+      \resumeItemListStart
+        \resumeItem{Performed manual testing on pull requests to prevent the introduction of new bugs to end-users.}
+        \resumeItem{Conducted routine testing in both local and staging environments, achieving an accuracy rate of over 85\%.}
+        \resumeItem{Re-crafted test cases for older products, resulting in a 65\% increase in test coverage and greater ease of comprehension.}
+        \resumeItem{Participated in daily standup meetings within an Agile development framework.}
+        \resumeItem{Acquired knowledge of Agile software development life cycle (SDLC) methodologies and operational continuous integration/continuous delivery (CI/CD) pipelines.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\textbf{Quick Cash} $|$ \emph{Java, Android SDK, Firebase Realtime Database, Git, GitLab}}{Sept 2022 -- Dec 2022}
+          \resumeItemListStart
+            \resumeItem{Developed an Android application that functions as a job-board platform, designed to assist students in finding part-time and casual employment opportunities within their vicinity.}
+            \resumeItem{Constructed the application from the ground up, incorporating geolocation features via the Google Maps API, a payment interface utilizing the PayPal API, and a recommendation engine to help employers identify suitable candidates based on their previous job experience.}
+            \resumeItem{Personally contributed to the project by integrating filter and search functionalities.}
+            \resumeItem{Worked in a team of 6 developers and followed Agile Principles.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Music Player} $|$ \emph{JavaScript, ReactJS, Redux Toolkit, Tailwind CSS, Git, GitHub}}{Feb 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Resulted in an end product consisting of a front-end component of a music streaming service, which accessed data through APIs.}
+            \resumeItem{Employed the Shazam API in order to retrieve artist and song data by means of the RapidAPI library and used Redux for state management.}
+            \resumeItem{Implemented React Best practices for file-structure and directory management.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\textbf{Game of Tetris} $|$ \emph{JavaScript, HTML, CSS, FlexBox, Git, GitHub}}{Jan 2023 -- Feb 2023}
+          \resumeItemListStart
+            \resumeItem{Created the iconic game of Tetris as a starting point of learning the language, used basic data structures like 2D Arrays and HashMaps.}
+            \resumeItem{Practiced Advanced CSS Flexbox and Z-index concepts.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, C/C++, SQL, HTML/CSS, JavaScript} \\
+     \textbf{Frameworks}{: Spring Boot, JUnit, React} \\
+     \textbf{Developer Tools}{: Git, GCC Compiler Tools, VS Code, PyCharm, IntelliJ, Android Studio, VIM, GitHub, GitLab} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
